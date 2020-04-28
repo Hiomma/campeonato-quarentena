@@ -1,0 +1,21 @@
+<form class="example-form">
+    <mat-grid-list cols="2" rowHeight="60px" *ngFor="let aux of listTimes">
+        <mat-grid-tile>
+            <mat-form-field class="example-full-width">
+                <mat-label>{{aux.nome}} - Pontos</mat-label>
+                <input matInput [(ngModel)]="aux.pontos" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-form-field class="example-full-width">
+                <mat-label>{{aux.nome}} - Jogos</mat-label>
+                <input matInput [(ngModel)]="aux.jogos" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="60px">
+        <mat-grid-tile>
+            <button mat-raised-button color="primary" (click)="atualizar()">Confirmar</button>
+        </mat-grid-tile>
+    </mat-grid-list>
+</form>

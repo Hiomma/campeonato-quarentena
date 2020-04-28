@@ -1,0 +1,19 @@
+.background {
+    background-color: rgb(71, 23, 26);
+    background-image: url("../../assets/campeonato.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tabela {
+    margin: 0 auto;
+    position: relative;
+    top: calc(50% - 155px);
+    max-width: 500px;
+    width: 100%;
+    min-width: 300px;
+}
